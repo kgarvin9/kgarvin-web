@@ -259,7 +259,7 @@ img { max-width: 100%; display: block; }
 }
 
 .landing-text h1 {
-  font-size: clamp(2.8rem, 5.5vw, 4.5rem);
+  font-size: clamp(3.2rem, 6vw, 5rem);
   color: var(--blue-deep);
   margin-top: 0.5rem;
   letter-spacing: -0.02em;
@@ -278,6 +278,18 @@ img { max-width: 100%; display: block; }
   gap: 0.75rem;
   margin-top: 2rem;
   justify-content: center;
+}
+
+.landing-actions .btn-secondary {
+  border-color: var(--blue);
+  color: var(--blue);
+  background: rgba(55, 83, 140, 0.08);
+}
+
+.landing-actions .btn-secondary:hover {
+  background: rgba(55, 83, 140, 0.15);
+  border-color: var(--blue-deep);
+  color: var(--blue-deep);
 }
 
 /* ── Highlights Ribbon ── */
