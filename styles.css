@@ -186,16 +186,22 @@ img { max-width: 100%; display: block; }
   backdrop-filter: blur(1px);
 }
 
+.page-bg.landing .site-header {
+  justify-content: center !important;
+  flex-direction: row !important;
+  align-items: center !important;
+}
+
 .landing-lesson-cta {
   display: block;
   width: fit-content;
   margin: 0 auto;
-  padding: 0.35rem 1.25rem;
+  padding: 0.6rem 2rem;
   background: rgba(255, 255, 255, 0.55);
   backdrop-filter: blur(12px);
   border-radius: 999px;
-  font-size: 0.78rem;
-  font-weight: 600;
+  font-size: 0.95rem;
+  font-weight: 700;
   color: var(--blue);
   text-decoration: none;
   text-align: center;
