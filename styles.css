@@ -175,7 +175,8 @@ img { max-width: 100%; display: block; }
 .page-bg.landing {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
   background-size: auto 115%;
   background-position: center 20%;
 }
@@ -184,11 +185,49 @@ img { max-width: 100%; display: block; }
   background: rgba(250, 248, 243, 0.45);
   backdrop-filter: blur(1px);
 }
+
+.landing-lesson-cta {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.35rem 1.25rem;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(12px);
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--blue);
+  text-decoration: none;
+  text-align: center;
+  transition: background 200ms ease;
+  position: relative;
+  z-index: 1;
 }
 
+.landing-lesson-cta:hover {
+  background: rgba(255, 255, 255, 0.75);
+}
 
 .landing-hero {
   padding: 2rem 0 0;
+}
+
+.landing-bars {
+  position: fixed;
+  bottom: 2.5rem;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.page-bg.landing .site-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  margin-top: 0;
+  padding: 0.5rem 0;
 }
 
 .page-bg.landing main {
@@ -199,6 +238,12 @@ img { max-width: 100%; display: block; }
 
 .page-bg.landing .site-footer {
   margin-top: auto;
+}
+
+.landing-hero .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .landing-text {
@@ -881,5 +926,39 @@ img { max-width: 100%; display: block; }
     flex-direction: column;
     gap: 0.75rem;
     text-align: center;
+  }
+
+  .landing-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .landing-intro {
+    font-size: 0.9rem;
+  }
+
+  .landing-bars {
+    bottom: 2rem;
+  }
+
+  .landing-bars .highlights-compact {
+    padding: 0.5rem 0;
+  }
+
+  .landing-bars .highlights-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.25rem;
+  }
+
+  .landing-bars .highlight-item strong {
+    font-size: 0.7rem;
+  }
+
+  .landing-bars .highlight-item span {
+    font-size: 0.65rem;
+  }
+
+  .page-bg.landing .site-footer {
+    padding: 0.4rem 0;
+    font-size: 0.8rem;
   }
 }
