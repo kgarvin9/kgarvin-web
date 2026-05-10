@@ -183,6 +183,20 @@ img { max-width: 100%; display: block; }
   align-items: center !important;
 }
 
+.page-bg.landing .site-nav a {
+  color: var(--white);
+}
+
+.page-bg.landing .site-nav a:hover,
+.page-bg.landing .site-nav a.active {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+.page-bg.landing .brand-name {
+  color: var(--white);
+}
+
 .landing-lesson-cta {
   display: block;
   width: fit-content;
