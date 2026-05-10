@@ -168,23 +168,26 @@ img { max-width: 100%; display: block; }
   flex-direction: column;
   height: 100vh;
   overflow: hidden;
-  background-image: none !important;
   background-color: #37538C;
-  --landing-bg: url('kg_main_lax.jpeg');
+  position: relative;
+}
+
+.landing-bg-img {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 115%;
+  width: auto;
+  object-fit: contain;
+  z-index: 0;
+  pointer-events: none;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
 }
 
 .page-bg.landing::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background-image: var(--landing-bg);
-  background-size: auto 115%;
-  background-position: center 20%;
-  background-repeat: no-repeat;
-  pointer-events: none;
-  z-index: 0;
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
-  mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+  display: none;
 }
 
 .page-bg.landing .site-header {
