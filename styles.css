@@ -211,10 +211,11 @@ img { max-width: 100%; display: block; }
 
 .landing-bars {
   position: fixed;
-  bottom: 2rem;
+  bottom: 2.75rem;
   left: 0;
   right: 0;
   z-index: 2;
+  padding: 0 5%;
 }
 
 .page-bg.landing .site-footer {
