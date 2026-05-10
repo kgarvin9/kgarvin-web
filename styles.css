@@ -180,7 +180,6 @@ img { max-width: 100%; display: block; }
 
 .page-bg.landing .site-header {
   justify-content: center !important;
-  flex-direction: row !important;
   align-items: center !important;
 }
 
