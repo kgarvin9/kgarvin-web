@@ -174,12 +174,7 @@ img { max-width: 100%; display: block; }
 }
 
 .page-bg.landing::before {
-  background: linear-gradient(to right,
-    #37538C 0%,
-    transparent 15%,
-    transparent 85%,
-    #37538C 100%
-  );
+  background: none;
   backdrop-filter: none;
 }
 
