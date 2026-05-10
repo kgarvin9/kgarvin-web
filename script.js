@@ -25,6 +25,15 @@ document.querySelectorAll(".site-nav a").forEach((link) => {
 });
 
 
+/* ── Visitor counter ── */
+const counterEl = document.getElementById("visitor-count");
+if (counterEl) {
+  fetch("https://api.counterapi.dev/v1/kgarvin-com/visits/up")
+    .then(r => r.json())
+    .then(d => { if (d.count) counterEl.textContent = d.count.toLocaleString() + " visits"; })
+    .catch(() => {});
+}
+
 /* ── Lesson inquiry form (Formspree) ── */
 const FORMSPREE_ID = "xrejoegn";
 
