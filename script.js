@@ -24,11 +24,6 @@ document.querySelectorAll(".site-nav a").forEach((link) => {
   }
 });
 
-/* ── Visitor counter (landing page) ── */
-const counterEl = document.getElementById("visitor-count");
-if (counterEl) {
-  counterEl.innerHTML = '<img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fkgarvin.com&count_bg=%231a2d4d&title_bg=%2337538C&icon=&icon_color=%23E7E7E7&title=visits&edge_flat=true" alt="visitor count" style="height: 18px; vertical-align: middle; opacity: 0.7;" />';
-}
 
 /* ── Lesson inquiry form (Formspree) ── */
 const FORMSPREE_ID = "xrejoegn";
