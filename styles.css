@@ -170,6 +170,7 @@ img { max-width: 100%; display: block; }
   overflow: hidden;
   background-size: auto 115%;
   background-position: center 20%;
+  background-color: #e8edf5;
 }
 
 .page-bg.landing::before {
