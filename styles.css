@@ -169,7 +169,7 @@ img { max-width: 100%; display: block; }
   overflow: hidden;
   background-size: auto 115%;
   background-position: center 20%;
-  background-color: #37538C;
+  background-color: #1a2d4d;
 }
 
 .page-bg.landing::before {
@@ -277,15 +277,15 @@ img { max-width: 100%; display: block; }
 }
 
 .landing-actions .btn-secondary {
-  border-color: var(--blue);
-  color: var(--blue);
-  background: rgba(55, 83, 140, 0.08);
+  border-color: rgba(255, 255, 255, 0.7);
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.15);
 }
 
 .landing-actions .btn-secondary:hover {
-  background: rgba(55, 83, 140, 0.15);
-  border-color: var(--blue-deep);
-  color: var(--blue-deep);
+  background: rgba(255, 255, 255, 0.3);
+  border-color: var(--white);
+  color: var(--white);
 }
 
 /* ── Highlights Ribbon ── */
