@@ -411,6 +411,14 @@ img { max-width: 100%; display: block; }
   border-top: 1px solid var(--border);
 }
 
+.section-tight {
+  padding: 2.5rem 0;
+}
+
+.page-head-compact {
+  padding: 3rem 0 2rem;
+}
+
 .section-label {
   text-transform: uppercase;
   letter-spacing: 0.16em;
