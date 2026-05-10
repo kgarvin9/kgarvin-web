@@ -228,8 +228,13 @@ img { max-width: 100%; display: block; }
   bottom: 2.75rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 75%;
+  width: min(75%, 500px);
   z-index: 2;
+}
+
+.landing-bars .highlights-grid {
+  grid-template-columns: 1fr 1fr !important;
+  gap: 0.25rem 1rem !important;
 }
 
 .page-bg.landing .site-footer {
@@ -270,9 +275,10 @@ img { max-width: 100%; display: block; }
 
 .landing-text h1 {
   font-size: clamp(3.2rem, 6vw, 5rem);
-  color: var(--blue-deep);
+  color: var(--white);
   margin-top: 0.5rem;
   letter-spacing: -0.02em;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .landing-intro {
@@ -280,7 +286,13 @@ img { max-width: 100%; display: block; }
   font-size: 1.05rem;
   line-height: 1.75;
   max-width: 50ch;
-  color: var(--text);
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.page-bg.landing .section-label {
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 
 .landing-actions {
