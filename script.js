@@ -28,7 +28,7 @@ document.querySelectorAll(".site-nav a").forEach((link) => {
 /* ── Visitor counter ── */
 const counterEl = document.getElementById("visitor-count");
 if (counterEl) {
-  fetch("https://api.counterapi.dev/v1/kgarvin-com/v2/up")
+  fetch("https://api.counterapi.dev/v1/kgarvin-com/v3/up")
     .then(r => r.json())
     .then(d => { if (d.count) counterEl.textContent = d.count.toLocaleString() + " visits"; })
     .catch(() => {});

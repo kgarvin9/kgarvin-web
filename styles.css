@@ -23,7 +23,8 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; margin: 0; padding: 0; }
+html:has(.page-bg.landing), body:has(.page-bg.landing) { background: #37538C; }
 
 body {
   margin: 0;
