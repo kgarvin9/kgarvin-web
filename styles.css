@@ -133,8 +133,7 @@ img { max-width: 100%; display: block; }
 }
 
 .page-bg .page-head {
-  background: rgba(55, 83, 140, 0.75);
-  backdrop-filter: blur(8px);
+  background: var(--blue);
 }
 
 /* Frosted glass cards over page backgrounds */
@@ -174,7 +173,7 @@ img { max-width: 100%; display: block; }
 }
 
 .page-bg.landing::before {
-  background: rgba(250, 248, 243, 0.45);
+  background: rgba(200, 212, 232, 0.35);
   backdrop-filter: blur(1px);
 }
 
