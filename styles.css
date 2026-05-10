@@ -220,7 +220,7 @@ img { max-width: 100%; display: block; }
 
 .landing-bars {
   position: fixed;
-  bottom: 2.5rem;
+  bottom: 2rem;
   left: 0;
   right: 0;
   z-index: 2;
@@ -233,7 +233,11 @@ img { max-width: 100%; display: block; }
   right: 0;
   z-index: 2;
   margin-top: 0;
-  padding: 0.5rem 0;
+  padding: 0.35rem 0;
+  border-top: none;
+  background: rgba(250, 248, 243, 0.5);
+  backdrop-filter: blur(8px);
+  font-size: 0.8rem;
 }
 
 .page-bg.landing main {
