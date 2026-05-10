@@ -174,8 +174,8 @@ img { max-width: 100%; display: block; }
 }
 
 .page-bg.landing::before {
-  background: rgba(200, 212, 232, 0.35);
-  backdrop-filter: blur(1px);
+  background: none;
+  backdrop-filter: none;
 }
 
 .page-bg.landing .site-header {
