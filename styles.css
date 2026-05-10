@@ -285,11 +285,11 @@ img { max-width: 100%; display: block; }
   font-size: 1.05rem;
   line-height: 1.75;
   max-width: 50ch;
-  color: var(--blue);
+  color: rgba(55, 83, 140, 0.5);
 }
 
 .page-bg.landing .section-label {
-  color: var(--blue-mid);
+  color: rgba(55, 83, 140, 0.55);
 }
 
 .landing-actions {
